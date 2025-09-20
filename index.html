@@ -1,9 +1,105 @@
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>My Project</title></head>
+
+<head>
+
+    <link rel="stylesheet" href="bingestylesheet.css" />
+    <title>
+        Binge
+    </title>
+
+
+</head>
+
+
 <body>
-  <h1>My Project</h1>
-  <p>Short description + links to code/results.</p>
-  <p><a href="https://github.com/nko123/<project-repo>">View the repo</a></p>
+    <!--The Navigation Bar that will be consistent for all pages-->
+    <div class="navbar">
+        <a href="homepage.html" class="logo"
+            style="color: #AF29FF; font-size: large; background-color: black;">Binge</a>
+        <a href="homepage.html">HOMEPAGE</a>
+        <div class="dropdown">
+            <button class="dropbtn">MOVIES</button>
+            <div class="dropdown-content">
+                <a href="GenrePage.html">Top Movies</a>
+                <a href="oscarwinningmovies.html">Oscar Winning Movies</a>
+            </div>
+        </div>
+        <a href="theaterlocator.html">THEATER LOCATOR</a>
+        <div class="dropdown" style="float: right;">
+            <button class="dropbtn">Signup | Login</button>
+            <div class="dropdown-content">
+                <a href="Signuppage.html">Signup</a>
+                <a href="LoginPage.html">Login</a>
+            </div>
+        </div>
+        <!--Provide a search bar for users. Currently not function-->
+        <div >
+            <input style="width:200px; float: right; padding: 6px; border: 1px solid; border-color: #AF29FF; margin-top: 15px; margin-right: 16px;" 
+            type="text" placeholder="Search...">
+        </div>
+        
+    </div>
+
+    <!-- hero image-->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h3>WELCOME TO</h3>
+            <h1 class="logo" style="font-size: 50;">Binge</h1>
+            <p>Enter short and interesting desciption about what the website is for or something</p>
+            <a class="button" href="theaterlocator.html" style="color: white;">Locate A Theater</a>
+        </div>
+    </div>
+
+    <!--top movies by genre section-->
+    <hr />
+    <div style="margin: 30px;">
+        <h1>Top Movies by Genre</h1>
+        <table style="width: 100%;">
+            <tr>
+                <!--add proper stock photos after-->
+                <td><img class="genre_img" src="stock_movie.jpg"></td>
+                <td><img class="genre_img" src="stock_movie.jpg"></td>
+                <td><img class="genre_img" src="stock_movie.jpg"></td>
+            </tr>
+            <tr>
+                <!--we want to add links to the different genre pages in the future-->
+                <td class="genre">Genre 1</td>
+                <td class="genre">Genre 2</td>
+                <td class="genre">Genre 3</td>
+            </tr>
+        </table>
+        <br />
+        <p>Enter short and interesting desciption of the page</p>
+        <a class="button" href="GenrePage.html">See More</a>
+        <hr />
+    </div>
+
+    <br />
+
+    <!--oscar winning movies section-->
+    <div>
+        <h1>Oscar Movies</h1>
+        <img style="padding:15px;" src="stock_oscar.jpg">
+        <br />
+        <p>Enter short and interesting desciption of the page</p>
+        <br />
+        <a class="button" href="oscarwinningmovies.html">Check The Out List</a>
+    </div>
+
+    <hr />
+
+    <!--contact us section, currently not functional-->
+    <div>
+        <form style="color: black; text-align: left;">
+            <h1 style="text-align: center;">CONTACT US</h1>
+            <b>Name*</b><br /> <input type="text" name="contact_name" required><br />
+            <b>Email*</b> <br /> <input type="text" name="contact_email" required><br />
+            <br />
+            <b>Questions or Comments*</b><br /><textarea name="contact_comment" cols="90" rows="10"></textarea><br />
+            <input type="submit" value="Submit" class="button">
+        </form>
+    </div>
 </body>
+
 </html>
