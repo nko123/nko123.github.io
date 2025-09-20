@@ -1,0 +1,85 @@
+
+<html>
+
+<head> 
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="bingestylesheet.css" />
+
+
+</head>
+
+<body>
+    <!--The Navigation Bar that will be consistent for all pages-->
+    <div class="navbar">
+        <a href="homepage.html" class="logo"
+            style="color: #AF29FF; font-size: large; background-color: black;">Binge</a>
+        <a href="homepage.html">HOMEPAGE</a>
+        <div class="dropdown">
+            <button class="dropbtn">MOVIES</button>
+            <div class="dropdown-content">
+                <a href="GenrePage.html">Top Movies</a>
+                <a href="oscarwinningmovies.html">Oscar Winning Movies</a>
+            </div>
+        </div>
+        <a href="theaterlocator.html">THEATER LOCATOR</a>
+        <div class="dropdown" style="float: right;">
+            <button class="dropbtn">Signup | Login</button>
+            <div class="dropdown-content">
+                <a href="Signuppage.html">Signup</a>
+                <a href="LoginPage.html">Login</a>
+            </div>
+        </div>
+        <!--Provide a search bar for users. Currently not function-->
+        <div >
+            <input style="width:200px; float: right; padding: 6px; border: 1px solid; border-color: #AF29FF; margin-top: 15px; margin-right: 16px;" 
+            type="text" placeholder="Search...">
+        </div>
+        
+    </div>
+
+</body>
+
+<body class="f_orm">
+    <div style="padding-top: 70px;">
+        <form>
+            <div class="colourbl">
+                <h1> Login to your Account </h1>
+                <img src="login-user.png"><br />
+                <b>Username:</b><br/><input type="text" name="username" placeholder="Enter Username" required /> <br/>
+                <b>Password:</b><br/> <input type="password" name="Password" placeholder="Enter Password" required /> <br/>
+                <input type="checkbox" name="terms and conditions" value="Remember me" checked required/> Remember me <br/>
+            </div>
+
+            <input class="column2" type="submit"/> 
+            <input class="column2" type="reset" name="reset" /> <br/>
+            
+
+            <button class="right" name="button" value="link" type="button"> <a href="ForgotPasswordPage.html">Forgot Password</a></button>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <hr/>
+
+            <p class="center_al" > OR<br/> </p>
+
+            <p class="center_al">
+                <a href="signuppage.html">
+                    <button style="color:white; border-radius: 5px; background-color: #AF29FF; border-style: solid; border-color:#AF29FF; padding: 12px 20px; cursor:pointer; width: 100%; " type="button">Sign Up</button>
+                </a>
+            </p>
+        </form>
+
+
+    </div>
+    
+
+
+
+</body>
+
+
+
+</html>
+

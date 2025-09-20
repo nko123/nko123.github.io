@@ -1,0 +1,348 @@
+/* Home Page */
+
+* {
+  margin-top: 0;
+}
+
+/*CSS style code for the navigation bar*/
+.navbar {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/*create container(s) for the dropdown*/
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 16px;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+/*style the background when pages are hovered*/
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: plum;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 140px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: plum;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*format the search option on the navigation bar*/
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: 1px solid;
+  border-color: #AF29FF;
+  margin-top: 15px;
+  margin-right: 16px;
+}
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/*format buttons to have a consistent style throughout the website*/
+.button {
+  background-color: #AF29FF;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 18px;
+}
+
+
+
+/*add hero image to the start of homepage*/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cinema.jpg");
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text a {
+  text-decoration: none;
+  color: black;
+}
+
+table.genre {
+  text-align: center;
+  padding: 10px;
+  font-size: 20;
+  font-family:sans-serif;
+}
+
+p.genre {
+  text-align: left;
+}
+
+
+
+/*CSS to adjust the size and alignment of the stock images used for top movies by genre*/
+.genre_img {
+  width: 357px;
+  height: 500px;
+  display: block;
+  /*this centers the images in the table*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  color: #AF29FF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+/*stylize horizontal rule to separate the sections on this page*/
+hr {
+  height: 4px;
+  background-color: #AF29FF;
+  margin: 35px 15px;
+  border: none;
+}
+
+form {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  width: 50%;
+  border: 4px solid black;
+  border-collapse: collapse;
+  padding: 60px 30px 100px;
+  border-radius: 10px;
+}
+
+
+/* Oscar Movies Page */
+
+.movie-list-container {
+  padding: 0 20px;
+}
+.movie-list {
+  display: flex;
+  align-items: stretch;
+  height: 300px;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+
+.movie-list-item-img {
+  width: 300px;
+  height: 270px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.movie-list-item-title {
+  color: #AF29FF;
+  padding: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  
+}
+
+/* Login/Signup/ForgotPass Pages */
+
+
+.colourbl{
+  text-align: left;
+  color: black;
+}
+
+.colourred{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.colourgreen{
+  text-align: center;
+  color:green;
+  font-weight: bold;
+}
+
+table {width: 50%;
+    align-self: center;
+
+}
+
+h1 { text-align: center;
+}
+
+
+/* Style for the forms */
+
+.f_orm {background-image:url("cinema.jpg");}
+ 
+form {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 50%;
+    border: 4px solid black;
+    border-collapse: collapse;
+    padding: 60px 30px 100px;
+    border-radius: 10px;
+}
+
+input[type=text],input[type=password], input[type=email], input[type=submit] {
+    width: 100%;
+    border:1px solid #555;
+    border-radius: 4px;
+    transition: width 0.4s ease-in-out;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+ }
+
+ input[type=button]{
+    border:1px solid #555;
+    border-radius: 4px;
+    margin: 8px 0;
+
+ }
+
+
+ button.right {
+    float: right;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: white;
+    background-color:white;
+    cursor:pointer;
+ }
+
+ button.left {
+    float: left;
+    cursor:pointer;
+  }
+
+input[type=submit] {
+    border-radius: 5px;
+    background-color: #AF29FF;
+    color: white;
+    width: 49.5%;
+    border-style: solid;
+    border-color: #AF29FF;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    cursor:pointer;
+ }
+
+input[type=reset]{
+  border-radius: 5px;
+  width: 49.5%;
+  color: white;
+  border-style: solid;
+  background-color: black;
+  border-color: black;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  cursor:pointer;
+}
+
+p.center_al{
+    text-align: center;
+    color: black;
+}
+
+img {
+    margin: auto;
+    width: 30%;
+    display: block;
+}
+
+
+
+/* Genre Page*/
+
+
+img.genreimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+
+.genre_filter{
+    float: center;
+    width: 100%;
+    height: 60px;
+}
+
+.genre_filter a:hover{
+    background-color: plum;
+}
+
+
+
+/* ksdfr*/
+

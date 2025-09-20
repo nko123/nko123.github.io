@@ -1,0 +1,45 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="bingestylesheet.css" />
+    <title>
+        Binge
+    </title>
+</head>
+
+
+<body>
+    <!--The Navigation Bar that will be consistent for all pages-->
+    <div class="navbar">
+        <a href="homepage.html" class="logo"
+            style="color: #AF29FF; font-size: large; background-color: black;">Binge</a>
+        <a href="homepage.html">HOMEPAGE</a>
+        <div class="dropdown">
+            <button class="dropbtn">MOVIES</button>
+            <div class="dropdown-content">
+                <a href="GenrePage.html">Top Movies</a>
+                <a href="oscarwinningmovies.html">Oscar Winning Movies</a>
+            </div>
+        </div>
+        <a href="theaterlocator.html">THEATER LOCATOR</a>
+        <div class="dropdown" style="float: right;">
+            <button class="dropbtn">Signup | Login</button>
+            <div class="dropdown-content">
+                <a href="Signuppage.html">Signup</a>
+                <a href="LoginPage.html">Login</a>
+            </div>
+        </div>
+        <!--Provide a search bar for users. Currently not function-->
+        <div >
+            <input style="width:200px; float: right; padding: 6px; border: 1px solid; border-color: #AF29FF; margin-top: 15px; margin-right: 16px;" 
+            type="text" placeholder="Search...">
+        </div>
+        
+    </div>
+
+    <div style="padding-top:60px"> 
+        <h2>Ottawa Movie Theater Locator</h2>
+        <iframe src="https://my.atlist.com/map/db937aac-9f22-4d32-8370-908edfe1abad?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
