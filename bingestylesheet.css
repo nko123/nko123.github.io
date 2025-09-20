@@ -342,6 +342,38 @@ img.genreimg {
     background-color: plum;
 }
 
+/* === FIX NAV OVERLAY & TOP CROP === */
+html, body { margin: 0; }           /* remove default top gap */
+
+/* keep navbar fixed at the very top and above hero */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 60px;                     /* your existing height */
+  z-index: 1000;                    /* sits above hero */
+  background: #000;
+}
+
+/* push the page down so content doesn't hide under the fixed bar */
+body { padding-top: 60px; }         /* adjust to 64–72px if still tight */
+
+/* ensure hero never covers/catches clicks over the navbar */
+.hero-image {
+  position: relative;
+  z-index: 0;
+  min-height: 60vh;                 /* more reliable than height: 60% */
+}
+
+/* dropdown menus should pop over the hero */
+.dropdown { position: relative; }
+.dropdown-content {
+  position: absolute;
+  z-index: 2000;
+}
+
+/* minor fix: add missing unit */
+table.genre { font-size: 20px; }
+
 
 
 /* ksdfr*/
