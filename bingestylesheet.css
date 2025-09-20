@@ -390,7 +390,7 @@ html, body { margin: 0; }
 }
 
 /* Push the page down so nothing hides under the fixed bar */
-body{ padding-top: 50px; }
+body{ padding-top: 30px; }
 
 /* Make hero fill the visible screen below the navbar and stay under it */
 .hero-image{
