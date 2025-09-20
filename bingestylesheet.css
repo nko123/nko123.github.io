@@ -376,7 +376,7 @@ img.genreimg {
 
 
 /* ===== NAV + HERO FIXES ===== */
-:root { --nav-h: 88px; }            /* tweak to 80–96px if needed */
+:root { --nav-h: 70px; }            /* tweak to 80–96px if needed */
 
 html, body { margin: 0; }
 
