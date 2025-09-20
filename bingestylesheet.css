@@ -1,9 +1,9 @@
 /* Home Page */
 
-* {
+/* * {
   margin-top: 0;
 }
-
+ */
 /*CSS style code for the navigation bar*/
 .navbar {
   background-color: black;
@@ -373,6 +373,52 @@ body { padding-top: 60px; }         /* adjust to 64–72px if still tight */
 
 /* minor fix: add missing unit */
 table.genre { font-size: 20px; }
+
+
+/* ===== NAV + HERO FIXES ===== */
+:root { --nav-h: 88px; }            /* tweak to 80–96px if needed */
+
+html, body { margin: 0; }
+
+/* Keep navbar above everything and reserve space for it */
+.navbar{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  z-index: 1000;
+  background: #000;
+}
+
+/* Push the page down so nothing hides under the fixed bar */
+body{ padding-top: var(--nav-h); }
+
+/* Make hero fill the visible screen below the navbar and stay under it */
+.hero-image{
+  position: relative;               /* creates stacking context under navbar */
+  z-index: 0;
+  min-height: calc(100vh - var(--nav-h));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Center hero text properly (no cropping) */
+.hero-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Dropdowns should render above hero */
+.dropdown{ position: relative; }
+.dropdown-content{ position: absolute; z-index: 2000; }
+
+/* Minor unit fix */
+table.genre{ font-size: 20px; }
+
 
 
 
