@@ -376,7 +376,7 @@ img.genreimg {
 
 
 /* ===== NAV + HERO FIXES ===== */
-:root { --nav-h: 70px; }            /* tweak to 80–96px if needed */
+:root { --nav-h: 60px; }            /* tweak to 80–96px if needed */
 
 html, body { margin: 0; }
 
@@ -390,7 +390,7 @@ html, body { margin: 0; }
 }
 
 /* Push the page down so nothing hides under the fixed bar */
-body{ padding-top: 30px; }
+body{ padding-top: 50px; }
 
 /* Make hero fill the visible screen below the navbar and stay under it */
 .hero-image{
